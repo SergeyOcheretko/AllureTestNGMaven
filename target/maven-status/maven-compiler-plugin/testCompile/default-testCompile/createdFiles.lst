@@ -1,0 +1,7 @@
+pages\BasePage.class
+pages\InteractWithInputAndButtonFieldsPage.class
+testRunner\TestRunner.class
+testSuite\TestInteractWithInputAndButtonFieldsSuite.class
+BaseTest\BaseTest.class
+pages\Locators.class
+pages\LocatorsUniversal.class

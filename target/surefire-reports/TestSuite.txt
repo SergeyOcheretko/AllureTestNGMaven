@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 15.239 s <<< FAILURE! - in TestSuite
+testSuite.TestInteractWithInputAndButtonFieldsSuite.InteractWithButtonPage  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testSuite.TestInteractWithInputAndButtonFieldsSuite.InteractWithButtonPage(TestInteractWithInputAndButtonFieldsSuite.java:58)
+
+testSuite.TestInteractWithInputAndButtonFieldsSuite.InteractWithInputPage  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testSuite.TestInteractWithInputAndButtonFieldsSuite.InteractWithInputPage(TestInteractWithInputAndButtonFieldsSuite.java:37)
+
+testSuite.TestInteractWithInputAndButtonFieldsSuite.openButtonPage  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testSuite.TestInteractWithInputAndButtonFieldsSuite.openButtonPage(TestInteractWithInputAndButtonFieldsSuite.java:50)
+
+testSuite.TestInteractWithInputAndButtonFieldsSuite.openInputPage  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testSuite.TestInteractWithInputAndButtonFieldsSuite.openInputPage(TestInteractWithInputAndButtonFieldsSuite.java:29)
+
+testSuite.TestInteractWithInputAndButtonFieldsSuite.openLetCodePage  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testSuite.TestInteractWithInputAndButtonFieldsSuite.openLetCodePage(TestInteractWithInputAndButtonFieldsSuite.java:23)
+
