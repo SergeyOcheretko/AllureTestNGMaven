@@ -17,6 +17,7 @@
         <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
         <allure.maven.version>2.12.0</allure.maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
 
     </properties>
 
@@ -63,27 +64,62 @@
             <artifactId>log4j-core</artifactId>
             <version>2.14.1</version> <!-- Укажите актуальную версию -->
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-commandline</artifactId>
-            <version>${allure.version}</version>
+            <artifactId>allure-testng</artifactId>
+            <version>2.25.0</version>
+
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.qameta.allure</groupId>-->
+<!--            <artifactId>allure-testng</artifactId>-->
+<!--            <version>2.12.0</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.apache.maven.doxia</groupId>
+            <artifactId>doxia-site-renderer</artifactId>
+            <version>1.9.2</version> <!-- Укажите актуальную версию -->
+        </dependency>
+
     </dependencies>
+
+
     <build>
         <plugins>
-            <!-- Maven Surefire Plugin (for TestNG) -->
+            <!-- Allure Maven Plugin -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure.version}</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                    <!-- Укажите прямой путь к директории результатов Allure -->
+                    <reportDirectory>${project.build.directory}/allure-results</reportDirectory>
+                </configuration>
+            </plugin>
+
+
+
+            <!-- Maven Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>${maven.surefire.plugin.version}</version>
                 <configuration>
+                    <!-- Указываем TestNG XML-файл для запуска тестов -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                     <argLine>
                         -Dfile.encoding=${project.build.sourceEncoding}
+                        <!-- Указываем агент AspectJ для аспектов -->
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                 </configuration>
                 <dependencies>
+                    <!-- Зависимость AspectJ для использования аспектов -->
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>
@@ -92,25 +128,15 @@
                 </dependencies>
             </plugin>
 
-            <!-- Allure Maven Plugin for TestNG -->
-            <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>${allure.version}</version>
-                <configuration>
-                    <reportVersion>${allure.version}</reportVersion>
-                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
-                </configuration>
-            </plugin>
-
             <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>${maven.compiler.plugin.version}</version>
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
-                    <release>11</release>
+                    <release>${maven.compiler.source}</release>
+
                 </configuration>
             </plugin>
         </plugins>

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T13:54:01 EET" name="Command line suite" finished-at="2024-03-13T13:54:14 EET" duration-ms="12655">
+  <suite started-at="2024-03-13T14:17:11 EET" name="Command line suite" finished-at="2024-03-13T14:17:25 EET" duration-ms="13467">
     <groups>
     </groups>
-    <test started-at="2024-03-13T13:54:01 EET" name="Command line test" finished-at="2024-03-13T13:54:14 EET" duration-ms="12655">
+    <test started-at="2024-03-13T14:17:11 EET" name="Command line test" finished-at="2024-03-13T14:17:25 EET" duration-ms="13467">
       <class name="testSuite.TestInteractWithInputAndButtonFieldsSuite">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T13:54:01 EET" name="beforeTest" finished-at="2024-03-13T13:54:02 EET" duration-ms="771" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T14:17:11 EET" name="beforeTest" finished-at="2024-03-13T14:17:12 EET" duration-ms="784" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T13:54:02 EET" name="beforeTest" finished-at="2024-03-13T13:54:02 EET" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T14:17:12 EET" name="beforeTest" finished-at="2024-03-13T14:17:12 EET" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="InteractWithButtonPage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T13:54:02 EET" name="InteractWithButtonPage" finished-at="2024-03-13T13:54:07 EET" duration-ms="5101" status="PASS">
+        <test-method signature="InteractWithButtonPage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T14:17:12 EET" name="InteractWithButtonPage" finished-at="2024-03-13T14:17:17 EET" duration-ms="5071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InteractWithButtonPage -->
-        <test-method signature="InteractWithInputPage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T13:54:07 EET" name="InteractWithInputPage" finished-at="2024-03-13T13:54:09 EET" duration-ms="2339" status="PASS">
+        <test-method signature="InteractWithInputPage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T14:17:17 EET" name="InteractWithInputPage" finished-at="2024-03-13T14:17:19 EET" duration-ms="2360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InteractWithInputPage -->
-        <test-method signature="openButtonPage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T13:54:09 EET" name="openButtonPage" finished-at="2024-03-13T13:54:11 EET" duration-ms="1572" status="PASS">
+        <test-method signature="openButtonPage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T14:17:19 EET" name="openButtonPage" finished-at="2024-03-13T14:17:21 EET" duration-ms="1558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openButtonPage -->
-        <test-method signature="openInputPage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T13:54:11 EET" name="openInputPage" finished-at="2024-03-13T13:54:12 EET" duration-ms="1419" status="PASS">
+        <test-method signature="openInputPage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T14:17:21 EET" name="openInputPage" finished-at="2024-03-13T14:17:23 EET" duration-ms="2119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openInputPage -->
-        <test-method signature="openLetCodePage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T13:54:12 EET" name="openLetCodePage" finished-at="2024-03-13T13:54:14 EET" duration-ms="1284" status="PASS">
+        <test-method signature="openLetCodePage()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T14:17:23 EET" name="openLetCodePage" finished-at="2024-03-13T14:17:25 EET" duration-ms="1363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLetCodePage -->
-        <test-method is-config="true" signature="shutsDownTheBrowser()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T13:54:14 EET" name="shutsDownTheBrowser" finished-at="2024-03-13T13:54:14 EET" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="shutsDownTheBrowser()[pri:0, instance:testSuite.TestInteractWithInputAndButtonFieldsSuite@8ee0c23]" started-at="2024-03-13T14:17:25 EET" name="shutsDownTheBrowser" finished-at="2024-03-13T14:17:25 EET" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutsDownTheBrowser -->
